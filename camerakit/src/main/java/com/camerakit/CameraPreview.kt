@@ -144,7 +144,7 @@ class CameraPreview : FrameLayout, CameraEvents {
     }
 
     fun capturePhoto(callback: PhotoCallback) {
-        cameraApi.setFlash(flash)
+        //cameraApi.setFlash(flash)
         cameraApi.capturePhoto {
             cameraApi.cameraHandler.post {
                 val jpeg = Jpeg(it)
